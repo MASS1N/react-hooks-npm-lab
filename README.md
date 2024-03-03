@@ -63,7 +63,15 @@ do not need to change `index.js`**. Instead, we will need to set up a
 The first thing to do is change directory into this folder in your terminal by
 typing the command `cd color-clock`.
 
-The next step is to create a `package.json` file in the `color-clock` directory,
+The next step is to create a `npm ERR! code E404
+npm ERR! 404 Not Found - GET https://registry.npmjs.org/create-package.json - Not found
+npm ERR! 404 
+npm ERR! 404  'create-package.json@*' is not in this registry.
+npm ERR! 404 
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+
+npm ERR! A complete log of this run can be found in: /Users/mustafa.mazin/.npm/_logs/2024-03-03T07_54_08_870Z-debug-0.log` file in the `color-clock` directory,
 which in turn will be where the `node_modules` folder is.
 
 **Important:** to avoid overwriting the `package.json` file for this code-along
@@ -218,7 +226,7 @@ script in the `index.html` file to use this new file. Find this line:
 <script src="index.js" type="module"></script>
 ```
 
-Change the `src` property to `dist/out.js`. Now we're finally ready to start the
+Change the `src` property to dist/out.js``. Now we're finally ready to start the
 server. Run `npm start` then open up [localhost:3000](http://localhost:3000) in
 the browser. You should now see a colorful clock appear!
 
